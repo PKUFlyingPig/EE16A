@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage[]{circuitikz}
+\usepackage{tikz}
+\begin{document}	
+	\ctikzset {voltage/distance from node=0.8}	
+\begin{circuitikz}[american voltages]
+	\draw (0,0) 
+	to[V_,l=$5V$] ++(0,-5) 
+	to ++(6,0)
+
+	(0,0) 
+	to[R=$1k\Omega$, n=r2] ++(6,0) (r2.s) node[anchor=north] {$R_2$}
+	
+	(2,0) to ++(0,2)
+	to[R=$1k\Omega$, n=r1] ++(2,0) (r1.s) node[anchor=north] {$R_1$}
+	(4,2) to ++(0,-2)
+	
+	(6,0)
+	to[R=$1k\Omega$, n=r3] ++(0,-3) (r3.s) node[anchor=east] {$R_3$}
+	
+	(6,-3)
+	to[leDo,l=$X_1 (LED)$] ++(0,-2)
+
+	;
+\end{circuitikz}
+\end{document}

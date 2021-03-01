@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage[]{circuitikz}
+\usepackage{tikz}
+\begin{document}		
+\begin{circuitikz}[american voltages]
+	\draw (0,0) 
+	to[V_,l=$3V$] ++(0,-5) 
+	to ++(4,0)
+	to ++(0,1)
+	to[pR, n=pot] ++(0,1) (pot.s) node[right] {$R_1$}
+	
+	(0,0) 
+	to ++(3,0) 
+	to[leDo,l=$X_1 (LED)$] ++(0,-2)
+	to ++(0,-1.5) 
+	to(pot.wiper) 
+	
+	(4,-5) 
+	to node[ground]{} ++(0,-.5)
+	;
+\end{circuitikz}
+\end{document}
