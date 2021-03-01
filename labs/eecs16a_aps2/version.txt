@@ -1,0 +1,33 @@
+04/25/2017
+P.Sandborn
+Updated helperb to have correct assignment.
+Updated to include beacon selection without kernel restart.
+Updated to allow *.wav-reading when mic is not enabled in windows. (try-except statement in mic.py)
+
+4/28/2017
+P. Sandborn
+Updated text to remind students to use the right speaker locations
+Wrote function in signals.py to return beacon.
+	- have not tested this function to see if it breaks other parts of the code, so it is not implemented in the main notebook yet
+
+8/2/2017
+S. Ono
+Split task 3 (Previously simulation, microphone record, and wave recording) into two parts: Simulation and Real Life Positioning.
+ - Part 3a is simulation so that everyone goes through it to verify that everything workds, i.e. sanity check
+ - Part 3b is real recording, where they first read about the recording techniques (mic, andriod, iphone) and choose one
+    - More indepth explanation on how to choose a file for their recording needs
+Speaker setup selection has been changed to a MANUAL INPUT that PROMPTS the students so they cannot gloss over and unknowingly not set their speaker setup
+Added a description to make sure to select a GOOD BEACON to sacrifice for better results.
+Updated positions in station B
+
+8/3/17
+S. Ono
+Remove functionality of having multiple beacons. Everyone uses beaconA.flac regardless of what station.
+
+8/13/17
+S. Ono + D. Labanowski
+Merged what was previously APS 1 and 2. What was previous APS 3 is now APS 2. APS 1 is now a completely a software oriented lab. APS 2 now imports APS 1 functions automaticaly in the notebook.
+
+4/16/19
+S. Ono
+Exported all code into helper functions and wrappers
